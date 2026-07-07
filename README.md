@@ -17,7 +17,7 @@ The electricity consumption charge is easy to understand and calculate. It is me
 **Total = Energy(kWh) * (current rate/100);**
 
 
-You must write a function that can calculate electricity rates per hour and per day based on user input of voltage, current (A), and current rate. You may refer to the example in document calculator.pdf.
+You must write a function that can calculate electricity rates per hour and per day based on user input of voltage, current (A), and current rate. You may refer to the example in document calculator.pdf. https://gitlab.com/sukor-muhammad/assignment_junior/-/blob/main/calculater.pdf
 
 https://www.tnb.com.my/residential/pricing-tariffs
 
