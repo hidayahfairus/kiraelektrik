@@ -1,24 +1,28 @@
-# assignment_junior
+# Electricity Bill Calculator
 
+An electricity bill calculation assignment using plain PHP (Vanilla) and Bootstrap 4.
 
+## Implementation:
 
-You will have 2 days to complete the test. You may use whatever resources you like as long as you are following the instructions below:
+1. **Input Form**:
+   - Accepts Voltage (V), Current (A), and Electricity Rate (sen/kWh).
 
-Write a programme in **PHP plain (vanila)** to calculate power, energy, and the total charge based on the current rate.
-You can use any **CSS framework (for example, Foundation or Bootstrap 4)**. 
-You have to **upload your source code to Git**.
+2. **Validation**:
+   - Checks whether all inputs are numeric values.
+   - Ensures all values entered are greater than 0.
+   - Displays an error alert if invalid input is detected.
 
-The electricity consumption charge is easy to understand and calculate. It is measured in kWh (kilowatt-hours). The rate of an electricity bill varies. Suppose we have the following conditions for calculating the rates of electricity:
+3. **Calculations**:
+   - Power (kW) = `(Voltage (V) × Current (A)) / 1000`
+   - Energy (kWh) = `Power (kW) × Hour`
+   - Electricity Rate (RM/kWh) = `Current Rate (sen/kWh) / 100`
+   - Total Cost (RM) = `Energy (kWh) × Electricity Rate (RM/kWh)`
 
-**Power (Wh) = Voltage (V) * Current  (A)**
+4. **Output Table**:
+   - Displays energy consumption and total electricity cost calculation from hour 1 until hour 24.
 
-**Energy (kWh) = Power * Hour * 1000 ;**
+## How to Run:
 
-**Total = Energy(kWh) * (current rate/100);**
-
-
-You must write a function that can calculate electricity rates per hour and per day based on user input of voltage, current (A), and current rate. You may refer to the example in document calculator.pdf. https://gitlab.com/sukor-muhammad/assignment_junior/-/blob/main/calculater.pdf
-
-https://www.tnb.com.my/residential/pricing-tariffs
-
-
+1. Copy the `kiraelektrik` folder into `xampp/htdocs/`.
+2. Open XAMPP Control Panel and start **Apache**.
+3. Open a browser and navigate to: http://localhost/kiraelektrik/
